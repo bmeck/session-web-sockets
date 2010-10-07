@@ -48,12 +48,12 @@ The client side code is from within this repository
 
 ### Usage Client Side
 
-    <script "./example/static/sws.js"></script></li>
-    <script></li>
-      SessionWebSocket(function(socket){</li>
-        socket.send("woot!")//</li>
-      })</li>
-    </script></li>
+    <script "./example/static/sws.js"></script>
+    <script>
+      SessionWebSocket(function(socket){
+        socket.send("woot!")//good to go
+      })
+    </script>
 
 ### Events
 
