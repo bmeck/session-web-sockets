@@ -1,0 +1,17 @@
+<html><head><title>
+Web Socket Auth Tutorial
+</title></head><body>
+	<script type="text/javascript" src="http://cdn.socket.io/stable/socket.io.js"></script>
+	<script type="text/javascript" src="sws.js"></script>
+	<div id="console"></div>
+	<script>
+		SessionWebSocket(function(socket){
+			socket.on('message',function(msg){
+				console.log("SWS:",msg)
+			})
+		})
+		var socket = new io.Socket()
+		socket.connect()
+		socket.send("OH NOES")
+	</script>
+</body></html>
