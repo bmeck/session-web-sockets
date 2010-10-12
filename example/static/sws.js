@@ -1,7 +1,7 @@
 function SessionWebSocket(cb) {
 	var xhr = new XMLHttpRequest()
 	//use https and go over the same port as the server
-	xhr.open("GET","/"+(new Date()+0))
+	xhr.open("GET","/?no-cache="+(new Date()+0))
 
 	//set our header to get the token
 	xhr.setRequestHeader("x-access-request-token","simple")
