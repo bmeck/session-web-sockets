@@ -75,10 +75,11 @@ module.exports = function verifier(options)
             l=onmsgs.length
             for(var i=0;i<l;i++) {
             	var fn = onmsgs[i]
-            	if(!session) {
-            		fn(msg)
-            	}
-            	client.on('message',fn)
+            	//if(!session) {
+            	//	fn(msg)
+            	//}
+            	//client.on('message',fn)
+                client.addListener('message',fn)
             }
             client.removeListener('message',first_verify)
           })

@@ -1,7 +1,8 @@
 {
-	name: "SessionWebSocket",
-	description: "socket.io & connect based session notification for websockets",
-	author: "bradleymeck",
-	version: "0.1.1",
-	main: "sws.js"
+	"name": "SessionWebSocket",
+	"description": "socket.io & connect based session notification for websockets",
+	"author": "bradleymeck",
+        "contributors": ["kazuyukitanimura"],
+	"version": "0.1.1",
+	"main": "sws.js"
 }
